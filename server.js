@@ -35,5 +35,5 @@ app.get('/', async (req, res) => {
 app.use('/articles', articleRouter)
 app.use('/users', userRouter)
 
-var port = process.nextTick.PORT || 5000;
+var port = process.env.PORT || 5000;
 app.listen(port)
